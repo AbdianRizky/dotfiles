@@ -1,5 +1,8 @@
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
 [user]
-	email = cj@null.computer
-	name = w3cj			
-[core]
-	editor = nano
+	name = AbdianRizky
+	email = abdianrizky11@gmail.com
