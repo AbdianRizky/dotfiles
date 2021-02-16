@@ -1,24 +1,3 @@
-# HOST_NAME=Adon
-
-# txtred='\e[0;31m' # Red
-# txtgrn='\e[0;32m' # Green
-# bldgrn='\e[1;32m' # Bold Green
-# bldpur='\e[1;35m' # Bold Purple
-# txtrst='\e[0m'    # Text Reset
-
-# emojis=("🌐" "🎲" "🌍" "🐉" "🌵")
-# EMOJI=${emojis[$RANDOM % ${#emojis[@]} ]}
-
-# print_before_the_prompt () {
-#     dir=$PWD
-#     home=$HOME
-#     dir=${dir/"$HOME"/"~"}
-#     printf "\n$txtred%s: $bldpur%s $txtgrn%s\n$txtrst" "$HOST_NAME" "$dir" "${vc}"
-# }
-
-# PROMPT_COMMAND=print_before_the_prompt
-# PS1="$EMOJI  "
-
 function mkcd()
 {
 	mkdir $1 && cd $1
@@ -32,6 +11,7 @@ alias ..="cd ../"
 alias ...="cd ../../"
 alias ....="cd ../../../"
 alias .....="cd ../../../../"
+alias ......="cd ../../../../../"
 
 
 #-------------------------
@@ -165,7 +145,7 @@ alias parcache='php artisan route:cache'
 alias parclear='php artisan route:clear'
 alias parlist='php artisan route:list'
 alias partest='php artisan route:test'
-# vie
+# view
 alias pavcache='php artisan view:cache'
 alias pavclear='php artisan view:clear'
 # schema
@@ -177,6 +157,25 @@ alias papswal='php artisan sweetalert:publish'
 # vendor
 alias pap='php artisan vendor:publish'
 
+#-------------------------
+# Rails
+#-------------------------
+alias r='rails'
+alias rn='rails new'
+alias rs='rails server'
+alias rt='rails test'
+alias rr='rails route'
+alias rdb='rails dbconsole'
+alias rdbm='rails db:migrate'
+alias rdbrollback='rails db:rollback'
+alias rmodel='rails generate model'
+alias rmigration='rails generate migration'
+alias rcontroller='rails generate controller'
+alias rresource='rails generate resource'
+alias rscaffold='rails generate scaffold'
+alias rhelper='rails generate help'
+# webpack
+alias wpdev='bin/webpack-dev-server'
 
 #-------------------------
 # Composer
